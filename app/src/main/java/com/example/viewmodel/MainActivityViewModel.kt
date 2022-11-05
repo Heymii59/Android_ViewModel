@@ -1,10 +1,8 @@
 package com.example.viewmodel
 
 import android.util.Log
-import android.widget.Toast
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import androidx.recyclerview.widget.LinearLayoutManager
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -14,7 +12,6 @@ class MainActivityViewModel: ViewModel() {
 
     init {
         var vaccineData = ArrayList<VaccineBody>()
-        //vaccineData.addAll()
 
         RetrofitObject.getApiService().getInfo(
             1,
